@@ -1,0 +1,75 @@
+.skills-wrapper{
+    background-color: var(--gray) !important;
+    color: white;
+}
+.skills-con{
+    margin-top: 40px;
+}
+.tools-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:980px){
+    .tools-con{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .gif-img{
+        padding-top: 20px;
+    }
+}
+.gif-img{
+    height: 340px;
+    width: 400px;
+}
+.tools{
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+.skill-bar{
+    width: 270px;
+    height: 20px;
+    background-color:white !important;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+.Reactjs{
+    background-color: pink !important;
+    height: 100% !important;
+    width: 58%;
+}
+.Tailwind{
+    background-color: pink !important;
+    height: 100% !important;
+    width: 50%;    
+}
+.Python{
+    background-color: pink !important;
+    height: 100% !important;
+    width: 82%;
+}
+.Django{
+    background-color: pink !important;
+    height: 100% !important;
+    width: 70%;
+}
+.FastAPI{
+    background-color: pink !important;
+    height: 100% !important;
+    width: 65%;
+}
+.JavaScript{
+    background-color: pink !important;
+    height: 100% !important;
+    width: 62%;
+}
+.skill{
+    display: flex;
+}
+.title{
+    padding: 10px;
+}
