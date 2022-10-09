@@ -5,5 +5,5 @@
     color: white;
     font-family: 'Poppins', sans-serif;
     background-color: var(--gray);
-    background-image: linear-gradient(to bottom, var(--gray), black);
+    background-image: var(--lightDarkBg);
 }
