@@ -7,7 +7,7 @@ const Project = ({projectall}) => {
     return ( 
         <>
 
-            <Card bg='dark' variant='dark' className='py-4 project_card'>
+            <Card bg='dark' variant='dark' className='py-4 project_card mx-2'>
                 <img src={projectall.image} alt="" />
                 <Card.Body>
                     <Card.Title as='h5'>{projectall.name}</Card.Title>
@@ -17,8 +17,10 @@ const Project = ({projectall}) => {
                 </Card.Text>
                 <Card.Footer as='div'>
                     <div className='projects_icons'>
-                        {projectall.live && <BsFillArrowUpRightSquareFill/>}
-                        <AiFillGithub/>
+                        {projectall.live && <a href={projectall.LiveUrl} className='icon' target='_blank'  rel='noopener noreferrer' >
+                            <BsFillArrowUpRightSquareFill/>
+                        </a>}
+                        <a href={projectall.CodeUrl} target = '_blank' className='icon' rel='noopener noreferrer'><AiFillGithub/></a>
                     </div>
 
                 </Card.Footer>
