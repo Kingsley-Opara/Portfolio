@@ -41,12 +41,10 @@
     }
     .react{
         position: absolute;
-        width: 100px;
-        color: white !important;
-        /* padding-right: 200px; */
-        top: 30% !important;
-        right: 100% !important;
-        left: 80%;
+        width: 150px;
+        left: -100px;
+        top: 50%;
+        /* padding-right: 100px; */
     }
     .javascript{
         width: 60px;

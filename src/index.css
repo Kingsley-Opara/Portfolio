@@ -1,5 +1,6 @@
 :root{
     --gray: #424242;
+    --lightDarkBg: linear-gradient(to bottom, var(--gray), black);
 }
 
 .body{

@@ -1,0 +1,10 @@
+.project_card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.projects_icons{
+    padding-left: 190px;
+    display: flex;
+    justify-content: space-evenly;
+}
