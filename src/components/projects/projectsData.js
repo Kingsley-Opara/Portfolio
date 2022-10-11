@@ -45,8 +45,8 @@ const projects = [
         'A personal portfolio website built using React and react-bootstrap',
         live: true,
         image: portfolio,
-        LiveUrl: 'https://metlab.herokuapp.com/',
-        CodeUrl: 'https://github.com/Kingsley-Opara/fetch-metadata-team-90/tree/main',
+        LiveUrl: 'https://github.com/Kingsley-Opara/Portfolio',
+        CodeUrl: 'https://main--kingsley-opara.netlify.app/',
     },
 ]
 

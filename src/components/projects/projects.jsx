@@ -17,7 +17,16 @@ const Project = ({projectall}) => {
     return ( 
         <>
 
-            <Card bg={lightMode ? "dark": 'white'} variant={lightMode ? "dark": 'white'} className='py-4 project_card mx-2'>
+            <Card 
+            bg={
+                localStorage.getItem('theme') === 'dark' ? 
+                'dark' : localStorage.getItem('theme') === 'light' ? 'light' : 'dark'
+            } 
+            variant={
+                localStorage.getItem('theme') === 'dark' ? 
+                'dark' : localStorage.getItem('theme') === 'light' ? 'light' : 'dark'
+            } 
+            className='py-4 project_card mx-2'>
                 <img src={projectall.image} alt="" />
                 <Card.Body>
                     <Card.Title as='h5'>{projectall.name}</Card.Title>

@@ -5,12 +5,20 @@ import {useContext} from 'react'
 import Context from '../../context'
 
 
+
 const Header = () => {
     const {lightMode} = useContext(Context)
     return ( 
         <>
             <header>
-                <Navbar collapseOnSelect bg={lightMode ? "dark": 'white'} variant={lightMode ? "dark": 'white'} 
+                <Navbar collapseOnSelect 
+                bg={
+                    localStorage.getItem('theme') === 'dark' ? 'dark' : localStorage.getItem('theme') === 'light' ? 'light' : 'dark'
+                } 
+                variant={
+                    localStorage.getItem('theme') === 'dark' ? 
+                    'dark' : localStorage.getItem('theme') === 'light' ? 'light' : 'dark'
+                } 
                 expand='lg'>
                     <Container>
                         <Navbar.Brand href="#home"><span className='kings'>Kings</span>Code</Navbar.Brand>
@@ -21,7 +29,7 @@ const Header = () => {
                                 <Nav.Link href="#pricing">Pricing</Nav.Link>
                             </Nav> */}
                             <Nav className='ml-auto'>
-                                <Nav.Link href="#deets">Projects</Nav.Link>
+                                    <Nav.Link href = '#projects'>Projects</Nav.Link>
                                 <Nav.Link href="#memes">
                                     Contact
                                 </Nav.Link>

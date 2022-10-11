@@ -1,5 +1,4 @@
 import Hero from "../hero/hero";
-import Header from "../navbar/navbar";
 import Skills from "../skills/skills";
 import {Row, Col, Container} from 'react-bootstrap';
 import Project from "../projects/projects";
@@ -10,10 +9,10 @@ import Typewriter from "typewriter-effect";
 const Home = () => {
     return (
         <>
-            <Header />
+            
             <Hero/>
             <Skills/>
-            <section className="projects-section py-3">
+            <section className="projects-section py-3" id='projects'>
                 <h2 className="projects_title">
                     <Typewriter
                     onInit={(typewriter) =>{

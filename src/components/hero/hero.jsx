@@ -50,10 +50,16 @@ const Hero = () => {
                                 <li>Technical Writer</li>
                             </ul>
                             <div className='icons'>
-                                <a href="" className='icon'><AiFillTwitterCircle /></a>
-                                <a href="" className='icon'><FaFacebook/></a>
+                                <a href="https://twitter.com/kingboy_____" className='icon'  target='_blank'  rel='noopener noreferrer'>
+                                    <AiFillTwitterCircle />
+                                </a>
+                                <a href="https://web.facebook.com/ronaldo135" className='icon'  target='_blank'  rel='noopener noreferrer'>
+                                    <FaFacebook/>
+                                </a>
                                 <a href="" className='icon'><AiFillLinkedin/></a>
-                                <a href="" className='icon'><AiFillGithub/></a>
+                                <a href="https://github.com/Kingsley-Opara" className='icon' target='_blank'  rel='noopener noreferrer'>
+                                    <AiFillGithub/>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -84,8 +90,14 @@ const Hero = () => {
 
                     </div>
                     
-                    { !lightMode ? <FaMoon className ='light moon' onClick={()=>{changeTheme()}}/> : 
-                    <MdOutlineLightMode className='light' onClick={()=>{changeTheme()}}/>}
+                    {     
+                        localStorage.getItem('theme') === 'dark' ? 
+                        <MdOutlineLightMode className='light' onClick={()=>{changeTheme()}}/> : 
+                        localStorage.getItem('theme') === 'light' ? <FaMoon className ='light moon' 
+                        onClick={()=>{changeTheme()}}/>: 
+                        <MdOutlineLightMode className='light' onClick={()=>{changeTheme()}}/> 
+                    
+                    }
                 </div>
 
                 
