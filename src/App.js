@@ -8,10 +8,7 @@ import Header from './components/navbar/navbar';
 
 
 function App() {
-  const [lightMode, setLightMode] = useState(
-    localStorage.getItem('theme') === 'dark' ? 
-    false : localStorage.getItem('theme') === 'light' ? true : false 
-  )
+  const [lightMode, setLightMode] = useState(true)
   // useEffect(()=>{
   //   !lightMode ? localStorage.setItem('theme', 'dark') : localStorage.setItem('theme', 'light')
   // }, [lightMode])

@@ -19,6 +19,12 @@
         padding-top: 20px;
     }
 }
+
+@media (max-width: 550px){
+    .gif-img{
+        width: 280px;
+    }
+}
 .gif-img{
     height: 340px;
     width: 400px;

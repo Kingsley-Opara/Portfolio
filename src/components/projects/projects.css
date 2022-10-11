@@ -9,9 +9,15 @@
     justify-content: space-evenly;
 }
 
+@media (max-width: 550px){
+    .project_card{
+        width: 300px !important;
+    }
+}
+
 @media (max-width: 750px){
     .project_card{
-        width: 400px;
+        width: 380px;
         margin-top: 20px;
     }
 }

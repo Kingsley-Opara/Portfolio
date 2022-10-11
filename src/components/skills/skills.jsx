@@ -10,8 +10,8 @@ const Skills = () => {
                     <div className="tools-con">
                         <div className="skills-con">
                             {
-                                skills.map((skill)=>{
-                                return ( 
+                                skills.map((skill) =>{
+                                    return(
                                         <div key={skill.title} className='py-3 skill'>
                                             <span className="title">{skill.title}</span>
                                             <div className="skill-bar">
@@ -20,8 +20,10 @@ const Skills = () => {
                                             </div>
 
                                         </div>
-                                )
+                                    )
                                 })
+                                
+                               
                             }
                         </div>
                         <img  

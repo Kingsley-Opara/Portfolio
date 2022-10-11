@@ -16,11 +16,11 @@
 .moon{
     color: black;
 }
-@media (min-width: 980px){
-    /* .light{
-        right: -10%;
-        top: -15%;
-    } */
+@media (max-width: 650px){
+    .light{
+        right: 10%;
+        top: 15%;
+    }
 }
 
 .icon{
@@ -33,6 +33,41 @@
 .icon:hover{
     transform: scale(1.5);
     color: lightgreen;
+}
+@media (max-width: 650px){
+    .gif{
+        width: 170px !important;
+        height: 200px !important;
+        margin-right: 40px;
+    }
+    .react{
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        margin-left: 50px !important;
+    }
+    .javascript{
+        position: absolute;
+        left: -21px;
+        top: 8%;
+        right: 1px;
+        margin-left: 40px !important;
+    }
+    .tailwind{
+        margin-left: 60px !important;
+    }
+    .fastapi{
+        width: 80px !important;
+        top: 40%;
+        right: 1%;
+        padding-right: 20px !important;
+    }
+    .python{
+        padding-right: 20px !important;
+        top: 85%;
+        width: 80px !important;
+
+    }
 }
 
 @media (max-width: 980px){
