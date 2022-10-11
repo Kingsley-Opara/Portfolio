@@ -4,10 +4,27 @@
     justify-content: space-between;
     align-items: center;
     /* background-color: var(--gray); */
+    position: relative;
+}
+.light{
+    position: fixed;
+    right: 5%;
+    top: 15%;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.moon{
+    color: black;
+}
+@media (min-width: 980px){
+    /* .light{
+        right: -10%;
+        top: -15%;
+    } */
 }
 
 .icon{
-    color: white;
+    color: var(--white);
     font-size: 30px;
     padding: 10px;
     cursor: pointer;

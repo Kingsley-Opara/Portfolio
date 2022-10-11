@@ -2,9 +2,20 @@ import profile from '../img/profile.jpg'
 import './hero.css'
 import { Container } from "react-bootstrap";
 import Typewriter from "typewriter-effect"
-import {AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
-import {FaFacebook} from 'react-icons/fa'
+import {AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
+import {FaFacebook} from 'react-icons/fa';
+import {MdOutlineLightMode} from 'react-icons/md';
+import { useContext } from 'react';
+import Context from '../../context';
+import {FaMoon} from 'react-icons/fa'
+
 const Hero = () => {
+    const {lightMode, setLightMode} = useContext(Context)
+    const changeTheme = ()=>{
+        setLightMode(!lightMode)
+        !lightMode && localStorage.setItem('theme', 'dark')
+        lightMode && localStorage.setItem('theme', 'light')
+    }
     return ( 
         <>
             {/* <img  src="https://user-images.githubusercontent.com/105108549/190127191-945c97b4-f2e8-47fe-b1da-ff678d31c0ed.gif" /> */}
@@ -72,6 +83,9 @@ const Hero = () => {
                         </div>
 
                     </div>
+                    
+                    { !lightMode ? <FaMoon className ='light moon' onClick={()=>{changeTheme()}}/> : 
+                    <MdOutlineLightMode className='light' onClick={()=>{changeTheme()}}/>}
                 </div>
 
                 

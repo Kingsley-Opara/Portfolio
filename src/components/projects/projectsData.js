@@ -2,6 +2,7 @@ import manage from '../img/manage.png'
 import netflix from '../img/netflix.png'
 import ocr from '../img/ocr.png'
 import metlab from '../img/metlab.jpg'
+import portfolio from '../img/portfolio.png'
 
 const projects = [
     {
@@ -17,7 +18,7 @@ const projects = [
         discription : 'Netflix Clone using The Movie DataBase API (TMDB API), React and CSS',
         live: true,
         image: netflix,
-        LiveUrl: '',
+        LiveUrl: 'https://movies-hub-kingsley.netlify.app/',
         CodeUrl: 'https://github.com/Kingsley-Opara/MovieApp',
     },
     {
@@ -35,6 +36,15 @@ const projects = [
         'A Data extraction tool that can be used to extract MetaData from files quickly and effectively while providing accurate information. Contributed in building the backend of the project with Django during an Internship training',
         live: true,
         image: metlab,
+        LiveUrl: 'https://metlab.herokuapp.com/',
+        CodeUrl: 'https://github.com/Kingsley-Opara/fetch-metadata-team-90/tree/main',
+    },
+    {
+        name: 'Personal Portfolio',
+        discription : 
+        'A personal portfolio website built using React and react-bootstrap',
+        live: true,
+        image: portfolio,
         LiveUrl: 'https://metlab.herokuapp.com/',
         CodeUrl: 'https://github.com/Kingsley-Opara/fetch-metadata-team-90/tree/main',
     },

@@ -1,6 +1,6 @@
 .skills-wrapper{
     background-color: var(--gray) !important;
-    color: white;
+    color: var(--white);
 }
 .skills-con{
     margin-top: 40px;
@@ -31,7 +31,7 @@
 .skill-bar{
     width: 270px;
     height: 20px;
-    background-color:white !important;
+    background-color: var(--white) !important;
     margin-top: 10px;
     border-radius: 10px;
 

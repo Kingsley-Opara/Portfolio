@@ -1,6 +1,13 @@
 :root{
     --gray: #424242;
-    --lightDarkBg: linear-gradient(to bottom, var(--gray), black);
+    --lightDarkBg: linear-gradient(to bottom, #424242, black);
+    --white: #ffff;
+}
+
+[dark-theme = 'light']{
+    --gray: white;
+    --lightDarkBg: linear-gradient(to bottom, gray, white);
+    --white: black;
 }
 
 .body{

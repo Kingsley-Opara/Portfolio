@@ -1,5 +1,9 @@
 .projects_title{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: white;
+    color: var(--white);
+}
+.projects-section{
+    color: var(--white);
+    background-color: var(--lightDarkBg);
 }

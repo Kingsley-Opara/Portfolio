@@ -2,12 +2,22 @@ import {Card} from 'react-bootstrap'
 import './projects.css';
 import {BsFillArrowUpRightSquareFill} from 'react-icons/bs'
 import {AiFillGithub} from 'react-icons/ai'
+import { useContext } from 'react';
+import Context from '../../context';
+import { useState } from 'react';
 
 const Project = ({projectall}) => {
+    const {lightMode} = useContext(Context)
+    const [showText, setShowText] = useState(false)
+    
+    const showTextfunc = () =>{
+        setSh
+    }
+
     return ( 
         <>
 
-            <Card bg='dark' variant='dark' className='py-4 project_card mx-2'>
+            <Card bg={lightMode ? "dark": 'white'} variant={lightMode ? "dark": 'white'} className='py-4 project_card mx-2'>
                 <img src={projectall.image} alt="" />
                 <Card.Body>
                     <Card.Title as='h5'>{projectall.name}</Card.Title>
