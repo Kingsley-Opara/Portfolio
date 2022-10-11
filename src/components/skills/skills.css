@@ -22,7 +22,9 @@
 
 @media (max-width: 550px){
     .gif-img{
-        width: 280px;
+        width: 280px !important;
+        height: 300px !important;
+        object-fit: contain;
     }
 }
 .gif-img{
@@ -41,6 +43,12 @@
     margin-top: 10px;
     border-radius: 10px;
 
+}
+
+@media (max-width: 550px){
+    .skill-bar{
+        width: 250px !important;
+    }
 }
 
 .Reactjs{
@@ -68,6 +76,7 @@
     height: 100% !important;
     width: 65%;
 }
+
 .JavaScript{
     background-color: pink !important;
     height: 100% !important;

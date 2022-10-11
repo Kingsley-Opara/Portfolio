@@ -58,13 +58,15 @@
     }
     .fastapi{
         width: 80px !important;
-        top: 40%;
-        right: 1%;
-        padding-right: 20px !important;
+        top: 40% !important;
+        right: 2.5% !important;
+        
+        padding-right: 30px !important;
     }
     .python{
-        padding-right: 20px !important;
+        padding-right: 30px !important;
         top: 85%;
+        right: 3% !important;
         width: 80px !important;
 
     }
