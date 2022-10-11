@@ -10,9 +10,9 @@ const Project = ({projectall}) => {
     const {lightMode} = useContext(Context)
     const [showText, setShowText] = useState(false)
     
-    const showTextfunc = () =>{
-        setSh
-    }
+    // const showTextfunc = () =>{
+    //     setSh
+    // }
 
     return ( 
         <>
