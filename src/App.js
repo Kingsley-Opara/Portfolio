@@ -8,7 +8,7 @@ import {useState, useEffect} from 'react'
 
 function App() {
   const [lightMode, setLightMode] = useState(localStorage.getItem('theme') === 'dark' ? 
-  false : localStorage.getItem('theme') === 'dark' ? true : false )
+  false : localStorage.getItem('theme') === 'light' ? true : false )
   // useEffect(()=>{
   //   !lightMode ? localStorage.setItem('theme', 'dark') : localStorage.setItem('theme', 'light')
   // }, [lightMode])
